@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will You Be My Girlfriend?</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #a18cd1 0%, #fbc2eb 100%);
+            margin: 0;
+            overflow: hidden;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .container {
+            text-align: center;
+            animation: fadeIn 2s ease-in-out;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: #fff;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.2rem;
+            color: #fff;
+            margin: 10px 0;
+        }
+
+        .video-container {
+            margin: 20px 0;
+            max-width: 500px;
+            width: 90%;
+        }
+
+        video {
+            width: 100%;
+            max-height: 300px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 1rem;
+            background-color: #fff;
+            color: #6a0dad;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin-top: 15px;
+        }
+
+        button:hover {
+            background-color: #d3a4ff;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p>Hey, it's been around 9 months since we really started talking
+        and every bit of it feels like heaven. I love you so much, Daisy, and
+        I want to be yours completely.</p>
+        <h1>So, Sarah Anike Oladunni Chiamaka Olaegbe</h1>
+        <p>Will you be my girlfriend?</p>
+        <div class="video-container">
+            <video controls>
+                <source src="daisyy.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <button onclick="showPopup()">Yes, I will!</button>
+        <a href="https://open.spotify.com/playlist/3UX4H9zmB2A00fdrLjP13j?si=I2Vb7c8WSzayTA9vAcfw_Q" target="_blank">
+            <button>Dance with me</button>
+        </a>
+    </div>
+
+    <script>
+        function showPopup() {
+            alert('Yay! I’m so happy you said yes!');
+        }
+    </script>
+</body>
+</html>
